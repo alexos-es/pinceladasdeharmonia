@@ -3,104 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pinceladas de Armonía</title>
+  <title>Pinceladas de Harmonía · José Luis Fernández Juan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
+    body{
+      margin:0;
+      font-family:'Inter',sans-serif;
+      color:#222;
+      line-height:1.6;
+      background:#ffffff;
     }
-    header {
-      background: #f5f5f5;
-      padding: 20px;
-      text-align: center;
+
+    header{
+      text-align:center;
+      padding:60px 20px 30px;
+      border-bottom:1px solid #eee;
     }
-    nav {
-      background: #333;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px;
+
+    header h1{
+      font-family:'Playfair Display',serif;
+      font-size:2.5rem;
+      margin:0;
     }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+
+    header p{
+      margin-top:10px;
+      color:#666;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+
+    nav{
+      text-align:center;
+      padding:15px;
+      border-bottom:1px solid #eee;
     }
-    .hero {
-      background: url('https://picsum.photos/1600/600') no-repeat center/cover;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
+
+    nav a{
+      margin:0 15px;
+      text-decoration:none;
+      color:#333;
+      font-weight:500;
     }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+
+    section{
+      max-width:1000px;
+      margin:auto;
+      padding:60px 20px;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #333;
-      color: white;
-      text-decoration: none;
-      margin-top: 20px;
+
+    h2{
+      font-family:'Playfair Display',serif;
+      font-size:2rem;
+      margin-bottom:20px;
     }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
+
+    .hero{
+      text-align:center;
+    }
+
+    .hero img{
+      max-width:300px;
+      margin:20px auto;
+      display:block;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      border:1px solid #eee;
+      padding:20px;
+      border-radius:10px;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      background:#111;
+      color:white;
+      margin-top:60px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Pinceladas de Armonía</h1>
-  <p>Arte, bienestar y creatividad</p>
+  <h1>Pinceladas de Harmonía</h1>
+  <p>Obra de José Luis Fernández Juan</p>
 </header>
 
 <nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#sobre">Sobre mí</a>
-  <a href="#servicios">Servicios</a>
+  <a href="#obra">La obra</a>
+  <a href="#autor">Autor</a>
+  <a href="#libros">Libros</a>
+  <a href="#contenido">Contenido</a>
   <a href="#contacto">Contacto</a>
 </nav>
 
-<section class="hero" id="inicio">
-  <h1>Conecta con tu creatividad</h1>
-  <p>Explora el arte como camino hacia el bienestar</p>
-  <a href="#contacto" class="btn">Contactar</a>
+<section class="hero" id="obra">
+  <h2>Una forma diferente de entender el lenguaje</h2>
+  <p>Pinceladas de Harmonía es una obra creativa que mezcla humor, surrealismo y reflexión a través del lenguaje.</p>
+  <img src="https://pinceladasdeharmonia.com/wp-content/uploads/2021/03/portada-libro.jpg" alt="Libro">
 </section>
 
-<section id="sobre">
-  <h2>Sobre mí</h2>
-  <p>Espacio dedicado al crecimiento personal a través del arte. Aquí puedes descubrir talleres, sesiones y propuestas enfocadas en el bienestar emocional.</p>
+<section id="autor">
+  <h2>El autor</h2>
+  <p>José Luis Fernández Juan es autor de la obra Pinceladas de Harmonía, un proyecto literario que explora nuevas formas de expresión a través del juego lingüístico, la creatividad y la imaginación.</p>
 </section>
 
-<section id="servicios">
-  <h2>Servicios</h2>
-  <ul>
-    <li>Talleres creativos</li>
-    <li>Sesiones individuales</li>
-    <li>Eventos artísticos</li>
-  </ul>
+<section id="libros">
+  <h2>La colección</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Pinceladas de Harmonía I</h3>
+      <p>Inicio de la obra donde se presentan los conceptos base del lenguaje creativo.</p>
+    </div>
+    <div class="card">
+      <h3>Pinceladas de Harmonía II</h3>
+      <p>Continuación con nuevas construcciones lingüísticas y reflexiones.</p>
+    </div>
+    <div class="card">
+      <h3>Pinceladas de Harmonía III</h3>
+      <p>Profundización en el universo creativo del autor.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contenido">
+  <h2>Qué encontrarás</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Creatividad lingüística</h3>
+      <p>Uso innovador del lenguaje para generar nuevas ideas.</p>
+    </div>
+    <div class="card">
+      <h3>Humor y surrealismo</h3>
+      <p>Una mirada diferente y sorprendente sobre la realidad.</p>
+    </div>
+    <div class="card">
+      <h3>Reflexión</h3>
+      <p>Invitación a pensar desde perspectivas distintas.</p>
+    </div>
+  </div>
 </section>
 
 <section id="contacto">
   <h2>Contacto</h2>
-  <p>Email: contacto@ejemplo.com</p>
+  <p>Para más información sobre la obra o el autor, visita la web oficial o contacta a través de sus canales.</p>
 </section>
 
 <footer>
-  <p>© 2026 Pinceladas de Armonía</p>
+  <p>© 2026 José Luis Fernández Juan · Pinceladas de Harmonía</p>
 </footer>
 
 </body>
