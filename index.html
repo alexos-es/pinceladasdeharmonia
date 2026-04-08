@@ -3,71 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pinceladas de Harmonía</title>
-  <link rel="stylesheet" href="./styles.css">
+  <title>Pinceladas de Armonía</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: url('https://picsum.photos/1600/600') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header / navegación -->
-  <header>
-    <div class="container">
-      <h1>Pinceladas de Harmonía</h1>
-      <nav>
-        <a href="#about">Sobre el autor</a>
-        <a href="#texts">Textos</a>
-        <a href="#videos">Vídeos</a>
-        <a href="#audiobooks">Audiolibros</a>
-        <a href="#contact">Contacto</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <h1>Pinceladas de Armonía</h1>
+  <p>Arte, bienestar y creatividad</p>
+</header>
 
-  <!-- Sección principal -->
-  <section id="hero">
-    <div class="container">
-      <h2>Explora un universo de lenguaje, humor y creatividad</h2>
-      <p>Un espacio dedicado a los textos, ficcionarios y vídeos de José-Luis Fernández Juan.</p>
-    </div>
-  </section>
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#sobre">Sobre mí</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#contacto">Contacto</a>
+</nav>
 
-  <!-- Sobre el autor -->
-  <section id="about" class="container">
-    <h2>Sobre el autor</h2>
-    <p>José-Luis Fernández Juan (Valencia, 1966) es filólogo, novelista y creador del proyecto Harmonía, donde el humor surrealista y la literatura se encuentran para explorar el lenguaje desde perspectivas originales.</p>
-  </section>
+<section class="hero" id="inicio">
+  <h1>Conecta con tu creatividad</h1>
+  <p>Explora el arte como camino hacia el bienestar</p>
+  <a href="#contacto" class="btn">Contactar</a>
+</section>
 
-  <!-- Textos -->
-  <section id="texts" class="container">
-    <h2>Textos y ficcionarios</h2>
-    <p>Descubre textos creativos, ficcionarios y piezas literarias que celebran la belleza del lenguaje.</p>
-    <!-- Aquí podrías integrar un listado dinámico si lo haces con CMS -->
-  </section>
+<section id="sobre">
+  <h2>Sobre mí</h2>
+  <p>Espacio dedicado al crecimiento personal a través del arte. Aquí puedes descubrir talleres, sesiones y propuestas enfocadas en el bienestar emocional.</p>
+</section>
 
-  <!-- Vídeos -->
-  <section id="videos" class="container">
-    <h2>Vídeos</h2>
-    <p>Avance de vídeos y entrevistas disponibles en el canal del autor.</p>
-    <a href="https://pinceladasdeharmonia.com/videos/" class="btn">Ver todos los vídeos</a>
-  </section>
+<section id="servicios">
+  <h2>Servicios</h2>
+  <ul>
+    <li>Talleres creativos</li>
+    <li>Sesiones individuales</li>
+    <li>Eventos artísticos</li>
+  </ul>
+</section>
 
-  <!-- Audiolibros -->
-  <section id="audiobooks" class="container">
-    <h2>Audiolibros</h2>
-    <p>Escucha extractos o capítulos promocionales del contenido audio.</p>
-    <a href="https://pinceladasdeharmonia.com/audiolibros/" class="btn">Escuchar audiolibros</a>
-  </section>
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Email: contacto@ejemplo.com</p>
+</section>
 
-  <!-- Contacto -->
-  <section id="contact" class="container">
-    <h2>Contacto</h2>
-    <p>Si quieres más información sobre la obra o el proyecto, visita la web original o redes del autor.</p>
-    <a href="https://pinceladasdeharmonia.com/" class="btn">Ir al sitio original</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="container">
-    <p>© 2025 Pinceladas de Harmonía</p>
-  </footer>
+<footer>
+  <p>© 2026 Pinceladas de Armonía</p>
+</footer>
 
 </body>
 </html>
